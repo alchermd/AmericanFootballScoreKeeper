@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#03A9F4"
     tools:context="me.johnalcher.americanfootballscorekeeper.MainActivity">
 
     <LinearLayout
@@ -26,6 +27,7 @@
                 android:layout_marginTop="16dp"
                 android:text="home"
                 android:textAllCaps="true"
+                android:textColor="#FFFFFF"
                 android:textSize="16sp" />
 
             <TextView
@@ -35,6 +37,7 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="24dp"
                 android:text="0"
+                android:textColor="#FFFFFF"
                 android:textSize="56sp"
                 android:textStyle="bold" />
 
@@ -45,7 +48,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:onClick="homeTouchDown"
-                android:text="touchdown +6" />
+                android:text="touchdown +6"
+                android:textColor="#FFFFFF" />
 
 
             <Button
@@ -55,7 +59,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:onClick="homeFieldGoal"
-                android:text="field goal +3" />
+                android:text="field goal +3"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:layout_width="match_parent"
@@ -64,7 +69,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:onClick="homePlusTwo"
-                android:text="try / save +2" />
+                android:text="try / save +2"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:layout_width="match_parent"
@@ -73,7 +79,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:onClick="homePlusOne"
-                android:text="try +1" />
+                android:text="try +1"
+                android:textColor="#FFFFFF" />
 
         </LinearLayout>
         <!-- End of HOME -->
@@ -93,6 +100,7 @@
                 android:layout_marginTop="16dp"
                 android:text="away"
                 android:textAllCaps="true"
+                android:textColor="#FFFFFF"
                 android:textSize="16sp" />
 
             <TextView
@@ -102,6 +110,7 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="24dp"
                 android:text="0"
+                android:textColor="#FFFFFF"
                 android:textSize="56sp"
                 android:textStyle="bold" />
 
@@ -112,7 +121,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:onClick="awayTouchDown"
-                android:text="touchdown +6" />
+                android:text="touchdown +6"
+                android:textColor="#FFFFFF" />
 
 
             <Button
@@ -122,7 +132,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:onClick="awayFieldGoal"
-                android:text="field goal +3" />
+                android:text="field goal +3"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:layout_width="match_parent"
@@ -131,7 +142,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:onClick="awayPlusTwo"
-                android:text="try / save +2" />
+                android:text="try / save +2"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:layout_width="match_parent"
@@ -140,7 +152,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:onClick="awayPlusOne"
-                android:text="try +1" />
+                android:text="try +1"
+                android:textColor="#FFFFFF" />
 
         </LinearLayout>
         <!-- End of AWAY -->
@@ -154,7 +167,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
         android:onClick="resetScores"
-        android:text="reset" />
+        android:text="reset"
+        android:textColor="#FFFFFF" />
 
 
 </RelativeLayout>
