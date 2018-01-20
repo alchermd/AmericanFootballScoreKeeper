@@ -118,4 +118,15 @@ public class MainActivity extends AppCompatActivity {
         awayScore += 1;
         displayAwayScore(awayScore);
     }
+
+    /**
+     * This method is called when the reset button is clicked.
+     */
+    public void resetScores(View view) {
+        homeScore = 0;
+        awayScore = 0;
+
+        displayHomeScore(homeScore);
+        displayAwayScore(awayScore);
+    }
 }
