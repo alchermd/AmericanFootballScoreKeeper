@@ -3,6 +3,7 @@ package me.johnalcher.americanfootballscorekeeper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.view.View;
 
 /**
  * This activity keeps track of the score for two Football teams.
@@ -15,10 +16,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        // TODO: Remove these display methods.
-        displayHomeScore(21);
-        displayAwayScore(12);
     }
 
     /**
@@ -41,7 +38,46 @@ public class MainActivity extends AppCompatActivity {
         awayScore.setText(Integer.toString(score));
     }
 
+
+    // TODO: implement callback functions for button events.
+
     /**
-     * TODO: implement callback functions for button events.
+     * This method is called when the HOME team scores a touchdown.
+     *
+     * @param view
      */
+    public void homeTouchDown(View view) {
+        homeScore += 6;
+        displayHomeScore(homeScore);
+    }
+
+    /**
+     * This method is called when the HOME team scores a field goal.
+     *
+     * @param view
+     */
+    public void homeFieldGoal(View view) {
+        homeScore += 3;
+        displayHomeScore(homeScore);
+    }
+
+    /**
+     * This method is called when the HOME team scores two points.
+     *
+     * @param view
+     */
+    public void homePlusTwo(View view) {
+        homeScore += 2;
+        displayHomeScore(homeScore);
+    }
+
+    /**
+     * This method is called when the HOME team scores a point.
+     *
+     * @param view
+     */
+    public void homePlusOne(View view) {
+        homeScore += 1;
+        displayHomeScore(homeScore);
+    }
 }
