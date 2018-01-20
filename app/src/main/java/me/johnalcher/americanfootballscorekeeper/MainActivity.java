@@ -39,8 +39,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    // TODO: implement callback functions for button events.
-
     /**
      * This method is called when the HOME team scores a touchdown.
      *
@@ -79,5 +77,45 @@ public class MainActivity extends AppCompatActivity {
     public void homePlusOne(View view) {
         homeScore += 1;
         displayHomeScore(homeScore);
+    }
+
+    /**
+     * This method is called when the AWAY team scores a touchdown.
+     *
+     * @param view
+     */
+    public void awayTouchDown(View view) {
+        awayScore += 6;
+        displayAwayScore(awayScore);
+    }
+
+    /**
+     * This method is called when the AWAY team scores a field goal.
+     *
+     * @param view
+     */
+    public void awayFieldGoal(View view) {
+        awayScore += 3;
+        displayAwayScore(awayScore);
+    }
+
+    /**
+     * This method is called when the AWAY team scores two points.
+     *
+     * @param view
+     */
+    public void awayPlusTwo(View view) {
+        awayScore += 2;
+        displayAwayScore(awayScore);
+    }
+
+    /**
+     * This method is called when the AWAY team scores a point.
+     *
+     * @param view
+     */
+    public void awayPlusOne(View view) {
+        awayScore += 1;
+        displayAwayScore(awayScore);
     }
 }
