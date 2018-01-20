@@ -3,7 +3,7 @@
 Keep track of the score of a Football game with this application.
 
 <div align="center">
-    <img src="github/preview.png" height="400px" width="800px">
+    <img src="github/preview.png" height="300px" width="700px">
 </div>
 
 
